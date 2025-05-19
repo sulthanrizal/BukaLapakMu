@@ -333,3 +333,60 @@
     }
   }
 }
+
+@media (max-width: 1500px) {
+  .body {
+    .section-2 {
+      gap: 30px;
+      .card-section2 {
+        width: 640px;
+        height: 350px;
+      }
+    }
+    .section-3 {
+      padding: 40px 20px;
+      .card-section3 {
+        width: 270px !important;
+        height: 500px;
+
+        .text-card-section3 {
+          h1 {
+            font-size: 16px;
+          }
+
+          span {
+            font-size: 15px;
+          }
+          .card-list {
+            .list {
+              display: flex;
+            }
+          }
+        }
+
+        .opacity-card-section3,
+        .no-opacity {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.6);
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 20px;
+          opacity: 1;
+          transition: opacity 0.3s ease-in-out;
+
+          p {
+            font-size: 16px;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
+}
