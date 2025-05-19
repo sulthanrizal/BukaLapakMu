@@ -16,15 +16,6 @@ export default function Body() {
     pesan: "",
   });
 
-  const handleChange = (e) => {
-    const { placeholder, value } = e.target;
-    setFormData({
-      ...formData,
-      [placeholder.toLowerCase().replaceAll(".", "").replaceAll(" ", "")]:
-        value,
-    });
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     // (opsional) bisa console.log(formData);
