@@ -33,6 +33,7 @@ export const dataSection3 = [
       <FontAwesomeIcon
         icon={faCoins}
         style={{ fontSize: "70px", color: "#ed7322" }}
+        className="logo-icon"
       />
     ),
     series: "Gerobak + Alat Sederhana",
@@ -52,6 +53,7 @@ export const dataSection3 = [
       <FontAwesomeIcon
         icon={faCartShopping}
         style={{ fontSize: "70px", color: "#ed7322" }}
+        className="logo-icon"
       />
     ),
     series: "",
@@ -70,6 +72,7 @@ export const dataSection3 = [
       <FontAwesomeIcon
         icon={faSackDollar}
         style={{ fontSize: "70px", color: "#ed7322" }}
+        className="logo-icon"
       />
     ),
     series: "Gerobak + Alat & Perlengkapan",
@@ -91,6 +94,7 @@ export const dataSection3 = [
       <FontAwesomeIcon
         icon={faGem}
         style={{ fontSize: "70px", color: "#ed7322" }}
+        className="logo-icon"
       />
     ),
     series: "Gerobak + Full Custom Branding",

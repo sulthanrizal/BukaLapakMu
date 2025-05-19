@@ -18,7 +18,6 @@ export default function Body() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // (opsional) bisa console.log(formData);
     setFormData({
       nama: "",
       email: "",

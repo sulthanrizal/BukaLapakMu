@@ -18,11 +18,11 @@ const Section3 = () => {
     pauseOnHover: false,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1200,
         settings: { slidesToShow: 2 },
       },
       {
-        breakpoint: 600,
+        breakpoint: 900,
         settings: { slidesToShow: 1 },
       },
     ],
