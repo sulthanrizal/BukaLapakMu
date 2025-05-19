@@ -1,0 +1,13 @@
+.container-footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 35px;
+  background: black;
+
+  .icon {
+    background: white;
+    padding: 10px;
+    border-radius: 999999px;
+  }
+}

@@ -29,7 +29,7 @@ export default function Body() {
 
   return (
     <>
-      <div className="body">
+      <div className="body" id="body">
         <section className="section-1">
           <img src={img} className="img" />
           <Flex className="text-section1">
@@ -43,7 +43,7 @@ export default function Body() {
             <span className="text-foot">#UsahaGakPakeDrama</span>
           </Flex>
         </section>
-        <section className="section-2">
+        <section className="section-2" id="section-2">
           {dataSection2.map((item, index) => {
             const { description, image, button, teksKlik } = item;
             return (
@@ -59,7 +59,7 @@ export default function Body() {
           })}
         </section>
         <Section3 />
-        <section className="section-4">
+        <section className="section-4" id="section-4">
           <h1>Kenapa Pilih BukaLapakMu?</h1>
           <div className="content-section4">
             {dataSection4.map((item, index) => {
@@ -75,7 +75,7 @@ export default function Body() {
           </div>
         </section>
       </div>
-      <section className="section-5">
+      <section className="section-5" id="section-5">
         <div className="bg-img">
           <img src={BackgroundSection5} />
         </div>

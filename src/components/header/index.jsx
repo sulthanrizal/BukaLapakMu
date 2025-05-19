@@ -1,41 +1,34 @@
-import { useState } from "react";
-import { Flex, IconButton } from "@chakra-ui/react";
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import { Flex } from "@chakra-ui/react";
 import assetImg from "../../assets/asset-logo.png";
 import "./index.scss";
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleMenu = () => setIsOpen(!isOpen);
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div className="con-header">
-      <Flex className="header" justify="space-between" align="center">
-        <img src={assetImg} className="logo" />
-
-        <Flex className="navbar-menu desktop-nav">
-          <p>Beranda</p>
-          <p>Produk</p>
-          <p>Harga</p>
-          <p className="kontak">Kontak</p>
+      <Flex className="header">
+        <img src={assetImg} alt="Logo" />
+        <Flex className="navbar-menu">
+          <p onClick={() => scrollToSection("body")}>Beranda</p>
+          <p onClick={() => scrollToSection("section-3")}>Produk</p>
+          <p onClick={() => scrollToSection("section-5")}>Sewa</p>
+          <a
+            href="https://wa.me/6289634477394"
+            target="_blank"
+            style={{ textDecoration: "none" }}
+          >
+            <p className="kontak" onClick={() => scrollToSection("footer")}>
+              Kontak
+            </p>
+          </a>
         </Flex>
-
-        <IconButton
-          aria-label="Toggle Menu"
-          icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
-          display={{ base: "block", md: "none" }}
-          onClick={toggleMenu}
-          className="hamburger-icon"
-        />
       </Flex>
-      {isOpen && (
-        <Flex direction="column" className="mobile-nav">
-          <p>Beranda</p>
-          <p>Produk</p>
-          <p>Harga</p>
-          <p className="kontak">Kontak</p>
-        </Flex>
-      )}
     </div>
   );
 }
